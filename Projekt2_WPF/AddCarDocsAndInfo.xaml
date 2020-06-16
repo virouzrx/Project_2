@@ -1,0 +1,35 @@
+﻿<Window x:Class="Projekt2_WPF.AddCarDocsAndInfo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Projekt2_WPF"
+        mc:Ignorable="d"
+        Title="AddCarDocsAndInfo" Height="450" Width="577.6">
+    <Grid>
+        <Button x:Name="saveButton" Content="Zapisz do bazy" HorizontalAlignment="Left" Margin="225,293,0,0" VerticalAlignment="Top" Width="95" Click="Button_Click"/>
+        <Label x:Name="saveData" Content="SAMPLE TEXT" HorizontalAlignment="Left" Margin="108,290,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
+        <Grid x:Name="Container">
+            <Label x:Name="vinNotEmpty" Content="Pole nie może być puste!" HorizontalAlignment="Left" Margin="334,105,0,0" VerticalAlignment="Top" Width="145" Height="26" Foreground="#FF0000"/>
+            <Label x:Name="carCardNotEmpty" Content="Pole nie może być puste!" HorizontalAlignment="Left" Margin="334,154,0,0" VerticalAlignment="Top" Width="145" Height="26" Foreground="#FF0000"/>
+            <Label x:Name="DateNotEmpty" Content="Pole nie może być puste!" HorizontalAlignment="Left" Margin="334,199,0,0" VerticalAlignment="Top" Width="145" Height="26" Foreground="#FF0000"/>
+            <Label x:Name="IdNotEmpty" Content="Pole nie może być puste!" HorizontalAlignment="Left" Margin="334,248,0,0" VerticalAlignment="Top" Width="145" Height="26" Foreground="#FF0000"/>
+            <Label x:Name="vinIncorrect" Content="Nieprawidłowo wprowadzone dane!" HorizontalAlignment="Left" Margin="334,105,0,0" VerticalAlignment="Top" Width="200" Height="26" Foreground="#FF0000"/>
+            <Label x:Name="carCardIncorrect" Content="Nieprawidłowo wprowadzone dane!" HorizontalAlignment="Left" Margin="334,154,0,0" VerticalAlignment="Top" Width="200" Height="26" Foreground="#FF0000"/>
+            <Label x:Name="firstRegistryIncorrect" Content="Nieprawidłowo wprowadzone dane!" HorizontalAlignment="Left" Margin="334,199,0,0" VerticalAlignment="Top" Width="200" Height="26" Foreground="#FF0000"/>
+            <Label x:Name="carIdIncorrect" Content="Nieprawidłowo wprowadzone dane!" HorizontalAlignment="Left" Margin="334,245,0,0" VerticalAlignment="Top" Width="200" Height="26" Foreground="#FF0000"/>
+            <TextBox x:Name="vinTextBox" HorizontalAlignment="Left" Height="26" Margin="196,105,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="vinTextBox_TextChanged"/>
+            <TextBox x:Name="carCardTextBox" HorizontalAlignment="Left" Height="26" Margin="196,154,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+            <TextBox x:Name="firstRegistryTextBox" HorizontalAlignment="Left" Height="26" Margin="196,199,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+            <TextBox x:Name="carIdTextBox" HorizontalAlignment="Left" Height="26" Margin="196,248,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+            <Label Content="Numer VIN" HorizontalAlignment="Left" Height="26" Margin="119,106,0,0" VerticalAlignment="Top" Width="72"/>
+            <Label Content="Nr karty pojazdu" HorizontalAlignment="Left" Height="26" Margin="94,154,0,0" VerticalAlignment="Top" Width="102"/>
+            <Label Content="Data pierwszej rejestarcji" HorizontalAlignment="Left" Height="26" Margin="47,199,0,0" VerticalAlignment="Top" Width="144"/>
+            <Label Content="ID pojazdu" HorizontalAlignment="Left" Height="26" Margin="119,245,0,0" VerticalAlignment="Top" Width="72"/>
+            <Label Content="Dodaj informacje o pojeździe" HorizontalAlignment="Left" Height="57" Margin="10,10,-55,0" VerticalAlignment="Top" Width="399" FontSize="30"/>
+            <Button x:Name="backButton" Content="Wstecz" HorizontalAlignment="Left" Margin="10,391,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
+            <Label HorizontalAlignment="Left" Margin="199,356,0,0" VerticalAlignment="Top"/>
+            
+        </Grid>
+    </Grid>
+</Window>
